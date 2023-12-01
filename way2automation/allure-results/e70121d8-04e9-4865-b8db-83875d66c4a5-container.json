@@ -1,0 +1,1 @@
+{"uuid":"e70121d8-04e9-4865-b8db-83875d66c4a5","name":"tests.testLogin","children":["336a73bc-0597-4f01-80c9-36ce213986a5"],"befores":[{"name":"setupdriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701282040395,"stop":1701282052995}],"afters":[],"start":1701282040302,"stop":1701282053711}
