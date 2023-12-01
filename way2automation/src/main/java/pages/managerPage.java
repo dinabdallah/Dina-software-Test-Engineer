@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.*;
 
+import static java.time.Duration.*;
+
 public class managerPage extends basePage{
     List<WebElement> cellsNumbers;
 
@@ -109,12 +111,12 @@ public int generateRandomNum(){
     public void selectCurrency () {
         Select selectrandomcurrenct = new Select(driver.findElement(cyrrencyDropDown));
         selectrandomcurrenct.selectByIndex(generateRandomNum());
-        new WebDriverWait(driver, Duration.ofSeconds(50));
+       // new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeSelected(cyrrencyDropDown));
     }
 
     public void processNewAccount () {
         clickOn(driver, submitButton);
-        new WebDriverWait(driver, Duration.ofSeconds(60)).until(ExpectedConditions.alertIsPresent());
+        new WebDriverWait(driver, ofSeconds(60)).until(ExpectedConditions.alertIsPresent());
     }
 }
 

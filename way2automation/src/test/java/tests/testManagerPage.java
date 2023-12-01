@@ -53,7 +53,6 @@ public class testManagerPage extends testBase{
             new managerPage(driver).selectCustomer();
             new managerPage(driver).selectCurrency();
             new managerPage(driver).processNewAccount();
-           // new WebDriverWait(driver, Duration.ofSeconds(60)).until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             String alertText = alert.getText();
             System.out.println("alert text: "+alertText);
